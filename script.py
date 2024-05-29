@@ -108,7 +108,7 @@ while True:
     for i, annotation in enumerate(annotations):
         for j in range(len(annotation)):
             if j != 0:
-                cv2.line(imgCurrent, annotation[j - 1], annotation[j], (0, 0, 200), 12)
+                cv2.line(imgCurrent, annotation[j - 1], annotation[j], (0, 0, 200), 5)
 
     imgSmall = cv2.resize(img, (ws, hs))
     h, w, _ = imgCurrent.shape
